@@ -6,86 +6,101 @@
 <title>jarpukka</title>
 
 <style type="text/css">
-body{margin:40px auto;
-max-width:600px;
-line-height:1.6;
-font-size:14px;
-color:#D8DEE9;
-background-color:#2E3440;
-padding:0 10px}
+
+body {
+        margin:40px auto;
+        max-width:600px;
+        line-height:1.6;
+        font-size:14px;
+        color:#D8DEE9;
+        background-color:#2E3440;
+        padding:0 10px;
+}
+
 h1,h2,h3{line-height:1.2}
 h1{text-align:center}
-a {color:#EBCB8B}
-</body>
+a {color:#A3BE8C}
+code {
+    color:#B48EAD;
+    background-color:#2E3440;
+}
 </style>
 </head>
 
 <body>
 
 <header>
-<h1>functions</h1>
+        <h1>Functions</h1>
 </header>
 
 <a href="index.html" target="_self">home</a>
 
 <hr>
 
-<p>
-<code>return-type function-name(parameter-list);</code>
-</p>
-<p>First we need function prototype:
-<ul><code>int add_values (int x, int y);
-</code></ul>
-</p>
+    <p>
+        <code>return-type function-name(parameter-list);</code>
+    </p>
 
-<p>Then we intoduce function body:
-<ul><pre><code>
-        int add_values (int x, int y)
+    <p>
+    First we need function prototype:
+    <ul>
+        <pre>
+        <code>int add_values (int x, int y);</code>
+        </pre>
+    </ul>
+    </p>
+
+    <p>
+        Then we intoduce function body:
+    <ul>
+        <pre>
+        <code>int add_values (int x, int y)
         {
                 return x + y;
-        }</p>
-</ul></pre></code>
+        }</code>
+    </ul>
+        </pre>
 
-      add_values (x, y);
+    <p>add_values (x, y);</p>
 
-Muista kirjoittaa funktion prototyyppi, se on kääntäjän (compiler)
-apuväline, jolla tarkastetaan että ohjelmassasi kutsutaan funktiota oikein.
-
-Kaikki funktioiden prototyypit kirjoitetaan ennen pääohjelmaa main(), ja 
-niiden tulee sisältää seuraavat asiat:
-
- - funktion nimi
-       (käytä selkeitä nimiä kuten muuttujissa!)
- - funktion argumentit
-       (argumentilla tarkoitetaan jotakin tietoa, jonka funktio saa sitä
-       kutsuttaessa.
-       funktiolla voi olla myös useita argumentteja)
-
- -  jos funktion pitää palauttaa jokin arvo, päätä funktio "return arvo;"
- -  palautusarvolla täytyy olla jokin tyyppi kuten muuttujilla
-     esim. int, long, double, float, char.
-     jos funktiolta ei haluta arvoa takaisin, käytä void tyyppiä
-
-Funktion parametrit
-  parametriluettelossa kerrotaan, mitä argumentteja funktio saa kutsuttaessa.
-  jokaisesta argumentista on kerrottava sen tietotyyppi.
-  jos funktio ei ota argumentteja, anna argumentiksi 'void'
-      void en_palauta_enkä_ota()
-  jos parametreja on useita, ne erotellaan toisistaan pilkulla:
-    int super_funktio(int koko_luku, float liuku_luku, char merkki)
-
-Hyviä tapoja
-  Koita pitää funktiot lyhyinä ja selkeinä.
-HUOM!
-  Funktio = monimutkainen muuttuja
-
-  Argumetti on arvo, joka funktiolle viedään.
-  Parametri on paikka, johon argumentti viedään
-
-  Voit tehdä funktion sisään samannimisen muuttujan kuin pääohjelmassa,
-  varo sekaannuksia!
-
-  Et voi määritellä toista funktiota funktion sisällä!
+    <!--Muista kirjoittaa funktion prototyyppi, se on kääntäjän (compiler)-->
+    <!--apuväline, jolla tarkastetaan että ohjelmassasi kutsutaan funktiota oikein.-->
+    <!---->
+    <!--Kaikki funktioiden prototyypit kirjoitetaan ennen pääohjelmaa main(), ja -->
+    <!--niiden tulee sisältää seuraavat asiat:-->
+    <!---->
+    <!-- - funktion nimi-->
+    <!--       (käytä selkeitä nimiä kuten muuttujissa!)-->
+    <!-- - funktion argumentit-->
+    <!--       (argumentilla tarkoitetaan jotakin tietoa, jonka funktio saa sitä-->
+    <!--       kutsuttaessa.-->
+    <!--       funktiolla voi olla myös useita argumentteja)-->
+    <!---->
+    <!-- -  jos funktion pitää palauttaa jokin arvo, päätä funktio "return arvo;"-->
+    <!-- -  palautusarvolla täytyy olla jokin tyyppi kuten muuttujilla-->
+    <!--     esim. int, long, double, float, char.-->
+    <!--     jos funktiolta ei haluta arvoa takaisin, käytä void tyyppiä-->
+    <!---->
+    <!--Funktion parametrit-->
+    <!--  parametriluettelossa kerrotaan, mitä argumentteja funktio saa kutsuttaessa.-->
+    <!--  jokaisesta argumentista on kerrottava sen tietotyyppi.-->
+    <!--  jos funktio ei ota argumentteja, anna argumentiksi 'void'-->
+    <!--      void en_palauta_enkä_ota()-->
+    <!--  jos parametreja on useita, ne erotellaan toisistaan pilkulla:-->
+    <!--    int super_funktio(int koko_luku, float liuku_luku, char merkki)-->
+    <!---->
+    <!--Hyviä tapoja-->
+    <!--  Koita pitää funktiot lyhyinä ja selkeinä.-->
+    <!--HUOM!-->
+    <!--  Funktio = monimutkainen muuttuja-->
+    <!---->
+    <!--  Argumetti on arvo, joka funktiolle viedään.-->
+    <!--  Parametri on paikka, johon argumentti viedään-->
+    <!---->
+    <!--  Voit tehdä funktion sisään samannimisen muuttujan kuin pääohjelmassa,-->
+    <!--  varo sekaannuksia!-->
+    <!---->
+    <!--  Et voi määritellä toista funktiota funktion sisällä!-->
 
 </body>
 </html>
