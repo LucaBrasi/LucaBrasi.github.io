@@ -1,86 +1,61 @@
 <!DOCTYPE html>
 <html>
 <html lang="en-us">
-
 <head>
-    <title>jarpukka</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <style type="text/css">
-        body {
-                margin:40px auto;
-                max-width:600px;
-                line-height:1.6;
-                font-size:14px;
-                color:#D8DEE9;
-                background-color:#2E3440;
-                padding:0 10px;
-        }
-        
-        h1,h2,h3{line-height:1.2}
-        h1{text-align:center}
-        a {color:#A3BE8C}
-        code {
-            color:#B48EAD;
-            background-color:#2E3440;
-        }
-    </style>
+<title>jarpukka</title>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style type="text/css">
+body {
+margin:40px auto;
+max-width:600px;
+line-height:1.6;
+font-size:14px;
+color:#D8DEE9;
+background-color:#2E3440;
+padding:0 10px;
+}
+
+h1,h2,h3{line-height:1.2}
+h1{text-align:center}
+a {color:#A3BE8C}
+
+code {
+color:#B48EAD;
+background-color:#2E3440;
+}
+
+</style>
 </head>
 
 <body>
 
-    <header>
-        <h1>Functions</h1>
-    </header>
+<a href="index.html" target="_self">home</a>
+<h1>Functions</h1>
 
-    <a href="index.html" target="_self">home</a>
-    <hr>
+<hr>
 
-    <p>
-        <code>
-return-type function-name(parameter-list);
-</code>
-    </p>
+<p>return-type function-name(parameter-list);</p>
+<p>First we need function prototype:
+<ul><pre><code>int add_values (int x, int y);</code></pre></ul></p>
 
-    <p>
-        First we need function prototype:
-        <ul>
-            <pre>
-<code>
-int add_values (int x, int y);
-</code>
-</pre>
-        </ul>
-    </p>
-
-    <p>
-        Then we introduce function body:
-        <ul>
-            <pre>
-<code>
-int add_values (int x, int y)
+<p>Then we introduce function body:</p>
+<ul><pre><code>int add_values (int x, int y)
 {
         return x + y;
-}
-</code>
-</pre>
-        </ul>
-    </p>
+}</code></pre></ul>
 
-    <p>
-        Now we can start using our sweet function. Call it in your program like so:
-    </p>
+<p>Now we can start using our sweet function. Call it in your program like so:</p>
 
-    <p>
-        <ul>
-            <pre>
-<code>
-add_values(x, y);
-</code>
-</pre>
-        </ul>
-    </p>
+<p><ul><pre><code>int main(void)
+{
+        int x = 1, y = 2;
+        add_values(x, y);
+        return 0;
+}</code></pre></ul></p>
 
 </body>
 </html>
