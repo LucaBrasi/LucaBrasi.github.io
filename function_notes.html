@@ -1,17 +1,17 @@
 <!doctype html>
 <html lang="en-us">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <style type="text/css">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style type="text/css">
 body {
-    margin:40px auto;
-    max-width:600px;
-    line-height:1.6;
-    font-size:14px;
-    color:#D8DEE9;
-    background-color:#3B4252;
-    padding:0 10px;
+margin:40px auto;
+max-width:600px;
+line-height:1.6;
+font-size:14px;
+color:#D8DEE9;
+background-color:#3B4252;
+padding:0 10px;
 }
 
 h1,h2,h3{line-height:1.2}
@@ -19,39 +19,49 @@ h1{text-align:center}
 a{color:#A3BE8C}
 
 code {
-    font-size:12px;
-    color:#B48EAD;
+font-size:12px;
+color:#B48EAD;
 }
 
 div {
-    background-color:#2E3440;
-    line-height:100%;
+background-color:#2E3440;
+line-height:100%;
 }
 
 <title>jarpukka</title>
-        </style>
-    </head>
+</style>
+</head>
 
-    <body>
+<body>
 
-        <a href="index.html" target="_self">home</a>
-        <h1>Functions</h1>
+<a href="index.html" target="_self">home</a>
+<h1>Functions</h1>
 
-        <hr>
+<hr>
 
-        <p>return-type function-name(parameter-list);</p>
-        <p>First we need function prototype:
-        <div><pre><code>float area(float radius);</code></pre></div>
+<p>return-type function-name(parameter-list);</p>
+<p>First we need function prototype:
+<div>
+<pre>
+<code>float area(float radius);</code>
+</pre>
+</div>
 
-        <p>Then we introduce function body:</p>
-        <div><pre><code>float area(float radius)  
+<p>Then we introduce function body:</p>
+<div>
+<pre>
+<code>float area(float radius)  
 {
         return pi * radius * radius;
-}</code></pre></div>
+}</code>
+</pre>
+</div>
 
 
-        <p>Now we can start using our sweet function. Call it in your program like so:</p>
-        <div><pre><code>#include &lt;stdio.h&gt;
+<p>Now we can start using our sweet function. Call it in your program like so:</p>
+<div>
+<pre>
+<code>#include &lt;stdio.h&gt;
 
 static float pi = 3.14159; 
 
@@ -70,20 +80,30 @@ int main()
 
         printf("Circles area is: %.2f", area(radius));
 
-        return 0;  
-}</code></pre></div>
+return 0;  
+}</code>
+</pre>
+</div>
 
-        <p>Your terminal should say:</p>
-        <div><samp><pre><code>Input circles radius: 12
-Circles area is: 452.39</code></pre></samp></div>
+<p>Your terminal should say:</p>
+<div>
+<samp>
+<pre>
+<code>Input circles radius: 12
+Circles area is: 452.39</code>
+</pre>
+</samp>
+</div>
 
-        <p>Ok, so we got that running, but functions can be way more usefull than that.
-        We can use them to make our code more readable, and to group related commands
-        under one command.</p>
+<p>Ok, so we got that running, but functions can be way more usefull than that.
+We can use them to make our code more readable, and to group related commands
+under one command.</p>
 
-        <div><pre><code>
-coming soon...
-        </code></pre></div>
+<div>
+<pre>
+<code>coming soon...</code>
+</pre>
+</div>
 
-    </body>
+</body>
 </html>
