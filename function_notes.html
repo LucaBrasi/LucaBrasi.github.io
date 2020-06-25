@@ -19,19 +19,29 @@ h1,h2,h3{line-height:1.2}
 h1{text-align:center}
 a{color:#A3BE8C}
 
+/* Browser specific (not valid) styles to make preformatted text wrap */		
+pre {
+white-space: pre-wrap;       /* css-3 */
+white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+white-space: -pre-wrap;      /* Opera 4-6 */
+white-space: -o-pre-wrap;    /* Opera 7 */
+word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+
 code {
-font-family: "Lucida Console", Courier, monospace;
+font-family: monospace, "Lucida Console", Courier;
 font-size:1.0em;
 color:#B48EAD;
 }
 
 div {
+max-width:600px;
 background-color:#2E3440;
 line-height:100%;
 }
 
 linksdiv {
-font-size:1.875em;
+font-size:1.475em;
 }
 
 <title>jarpukka</title>

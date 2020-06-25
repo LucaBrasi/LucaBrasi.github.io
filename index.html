@@ -1,20 +1,4 @@
 <!doctype html>
-<!--  (#2E3440) --> 
-<!--  (#3B4252) -->
-<!--  (#434C5E) -->
-<!--  (#4C566A) -->
-<!--  (#D8DEE9) -->
-<!--  (#E5E9F0) -->
-<!--  (#ECEFF4) -->
-<!--  (#8FBCBB) -->
-<!--  (#88C0D0) -->
-<!--  (#81A1C1) -->
-<!--  (#5E81AC) -->
-<!--  (#BF616A) -->
-<!--  (#D08770) -->
-<!--  (#EBCB8B) -->
-<!--  (#A3BE8C) -->
-<!--  (#B48EAD) -->
 <html lang="en-us">
 <head>
 <meta charset="utf-8">
@@ -35,19 +19,29 @@ h1,h2,h3{line-height:1.2}
 h1{text-align:center}
 a{color:#A3BE8C}
 
+/* Browser specific (not valid) styles to make preformatted text wrap */		
+pre {
+white-space: pre-wrap;       /* css-3 */
+white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+white-space: -pre-wrap;      /* Opera 4-6 */
+white-space: -o-pre-wrap;    /* Opera 7 */
+word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+
 code {
-font-family: "Lucida Console", Courier, monospace;
+font-family: monospace, "Lucida Console", Courier;
 font-size:1.0em;
 color:#B48EAD;
 }
 
 div {
+max-width:600px;
 background-color:#2E3440;
 line-height:120%;
 }
 
 linksdiv {
-font-size:1.875em;
+font-size:1.475em;
 }
 
 <title>jarpukka</title>
