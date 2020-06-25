@@ -20,12 +20,11 @@ a{color:#A3BE8C}
 
 code {
 font-size:12px;
-color:#2E3440;
+color:#B48EAD;
+background-color:#2E3440;
 }
 
-.termdiv {
-border:1px outset #B48EAD;
-background-color:#D8DEE9;
+div {
 line-height:100%;
 }
 
@@ -42,55 +41,24 @@ line-height:100%;
 
 <p>return-type function-name(parameter-list);</p>
 <p>First we need function prototype:
-<div class="termdiv"><ul><pre><code>float area(float radius);</code></pre></ul></p></div>
+<div><ul><pre><code>float area(float radius);</code></pre></ul></p></div>
 
 <p>Then we introduce function body:</p>
-<div class="termdiv"><ul><pre><code>float area(float radius)
-{ 
-	return pi * radius * radius;
+<div><ul><pre><code>int add_values(int x, int y)
+{
+        return x + y;
 }</code></pre></ul></div>
 
 <p>Now we can start using our sweet function. Call it in your program like so:</p>
 
-<div class="termdiv"><ul><pre><code>#include &lt;stdio.h&gt;
+<div><ul><pre><code>#include &lt;stdio.h&gt;
 
 static float pi = 3.14159; 
  
-float area(float radius);
-float area(float radius)
+float area(float radius);  
+float area(float radius)  
 { 
-	return pi * radius * radius;
-}
-
-int main()     
-{ 
-	float radius; 
-
-	printf("Input circles radius: ");  
-	scanf("%f", &radius);  
-
-	printf("Circles area is: %.2f\n", area(radius));
-
-	return 0;  
-
-}</code></pre></ul></div>
-
-<p>Your terminal should say:</p>
-<div class="termdiv"><ul><samp><pre><code>Input circles radius: 12
-Circles area is: 452.39</code></pre></samp></ul></div>
-
-<p>Ok, so we got that running, but functions can be way more usefull than that.
-We can use them to make our code more readable, and to group related commands
-under one command.</p>
-
-<div class="termdiv"><ul><pre><code>#include &lt;stdio.h&gt;
-
-static float pi = 3.14159; 
- 
-float area(float radius);
-float area(float radius)
-{ 
-	return pi * radius * radius;
+	return pi * radius * radius; 
 }
 
 int main()     
@@ -104,6 +72,18 @@ int main()
 
 	return 0;  
 }</code></pre></ul></div>
+
+<p>Your terminal should say:</p>
+<div><ul><samp><pre><code>Input circles radius: 12
+Circles area is: 452.39</code></pre></samp></ul></div>
+
+<p>Ok, so we got that running, but functions can be way more usefull than that.
+We can use them to make our code more readable, and to group related commands
+under one command.</p>
+
+<div><ul><pre><code>
+
+</code></pre></ul></div>
 
 </body>
 </html>
