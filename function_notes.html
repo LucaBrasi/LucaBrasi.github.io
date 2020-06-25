@@ -1,13 +1,8 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
 <html lang="en-us">
 <head>
-
-<title>jarpukka</title>
-
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <style type="text/css">
 body {
 margin:40px auto;
@@ -21,13 +16,19 @@ padding:0 10px;
 
 h1,h2,h3{line-height:1.2}
 h1{text-align:center}
-a {color:#A3BE8C}
+a{color:#A3BE8C}
 
 code {
+font-size:12px;
 color:#B48EAD;
 background-color:#2E3440;
 }
 
+div {
+line-height:100%;
+}
+
+<title>jarpukka</title>
 </style>
 </head>
 
@@ -40,22 +41,59 @@ background-color:#2E3440;
 
 <p>return-type function-name(parameter-list);</p>
 <p>First we need function prototype:
-<ul><pre><code>int add_values (int x, int y);</code></pre></ul></p>
+<ul><pre><code>int add_values(int x, int y);</code></pre></ul></p>
 
 <p>Then we introduce function body:</p>
-<ul><pre><code>int add_values (int x, int y)
+<div><ul><pre><code>int add_values(int x, int y)
 {
         return x + y;
-}</code></pre></ul>
+}</code></pre></ul></div>
 
 <p>Now we can start using our sweet function. Call it in your program like so:</p>
 
-<p><ul><pre><code>int main(void)
+<div><ul><pre><code>#include &lt;stdio.h&gt;
+
+int add_values(int x, int y);
+int add_values(int x, int y)
+{
+        return x + y;
+}
+
+int main(void)
 {
         int x = 1, y = 2;
-        add_values(x, y);
+        printf("%d + %d = %d\n", x, y, add_values(x,y));
         return 0;
-}</code></pre></ul></p>
+}</code></pre></ul></div>
+
+<p>Your terminal should say:</p>
+<div><ul><samp><code>$ 1 + 2 = 3</code></samp></ul></div>
+
+<p>Ok, so we got that running, but functions can be way more usefull than that.
+We can use them to make our code more readable, and to group related commands
+under one command.</p>
+
+<div><ul><pre><code>#include &lt;stdio.h&gt;
+
+static float pi = 3.14159; 
+ 
+float area(float radius);  
+float area(float radius)  
+{ 
+	return pi * radius * radius; 
+}
+
+int main()     
+{ 
+	float radius; 
+
+	printf("Input circles radius: ");  
+	scanf("%f", &radius);  
+
+	printf("Circles area is: %.2f", area(radius));
+
+	return 0;  
+}</code></pre></ul></div>
 
 </body>
 </html>
