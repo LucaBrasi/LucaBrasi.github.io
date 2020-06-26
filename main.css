@@ -1,0 +1,47 @@
+/*
+ * jarpukka css
+ */
+
+body {
+  margin:40px auto;
+  max-width:600px;
+  line-height:1.6;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size:1.0em;
+  color:#D8DEE9;
+  background-color:#3B4252;
+  padding:0 10px;
+}
+
+h1,h2,h3{line-height:1.2}
+h1{text-align:center}
+a{color:#A3BE8C}
+
+/* Browser specific (not valid) styles to make preformatted text wrap */		
+pre {
+  white-space: pre-wrap;       /* css-3 */
+  white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+  white-space: -pre-wrap;      /* Opera 4-6 */
+  white-space: -o-pre-wrap;    /* Opera 7 */
+  word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+
+code {
+  font-family: monospace, "Lucida Console", Courier;
+  font-size:1.0em;
+  color:#B48EAD;
+}
+
+div {
+  max-width:600px;
+  background-color:#2E3440;
+  line-height:120%;
+}
+
+linksdiv {
+  font-size:1.475em;
+}
+
+<title>jarpukka</title>
+
+<link rel="stylesheet" href="main.css">
